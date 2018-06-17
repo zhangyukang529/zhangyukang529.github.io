@@ -20,56 +20,59 @@
 		<div id="content">
 			<div id="code">
 				<span class="comments">/**</span><br />
-				<span class="space"/><span class="comments">* We are both Fudan SSers and programmers,</span><br />
-				<span class="space"/><span class="comments">* so I write some code to celebrate our 1st anniversary.</span><br />
+				<span class="space"/><span class="comments">* A Sunday afternoon.</span><br />
+				<span class="space"/><span class="comments">* The cafe where I usually spend my time.</span><br />
+				Cafe cafe = <span class="keyword">new</span> Cafe(<span class="string">"Stardust"</span>);<br />
 				<span class="space"/><span class="comments">*/</span><br />
-				Boy i = <span class="keyword">new</span> Boy(<span class="string">"hackerzhou"</span>);<br />
-				Girl u = <span class="keyword">new</span> Girl(<span class="string">"MaryNee"</span>);<br />
-				<span class="comments">// Nov 2, 2010, I told you I love you. </span><br />
-				i.love(u);<br />
-				<span class="comments">// Luckily, you accepted and became my girlfriend eversince.</span><br />
-				u.accepted();<br />
-				<span class="comments">// Since then, I miss u every day.</span><br />
-				i.miss(u);<br />
-				<span class="comments">// And take care of u and our love.</span><br />
-				i.takeCareOf(u);<br />
-				<span class="comments">// You say that you won't be so easy to marry me.</span><br />
-				<span class="comments">// So I keep waiting and I have confidence that you will.</span><br />
-				<span class="keyword">boolean</span> isHesitate = <span class="keyword">true</span>;<br />
-				<span class="keyword">while</span> (isHesitate) {<br />
-				<span class="placeholder"/>i.waitFor(u);<br />
-				<span class="placeholder"/><span class="comments">// I think it is an important decision</span><br />
-				<span class="placeholder"/><span class="comments">// and you should think it over.</span><br />
-				<span class="placeholder"/>isHesitate = u.thinkOver();<br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"I"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"Where_are_you_now"</span>);<br />
+				<span class="comments">//  </span><br />
+				i.meet(u);<br />
+				<span class="comments">// You were so beautiful.</span><br />
+				<span class="keyword">try</span> {<br />
+				<span class="placeholder"/>i.walkTo(u);<br />
 				}<br />
-				<span class="comments">// After a romantic wedding, we will live happily ever after.</span><br />
-				i.marry(u);<br />
-				i.liveHappilyWith(u);<br />
+				<span class="keyword">catch </span>(Exception e) {<br />
+				<span class="placeholder"/><span class="comments">// But I didn't know what to do.</span><br />
+				<span class="placeholder"/>u.smileTo(i);<br />
+				}<br />
+				i.stutter(u);<br />
+				<span class="comments">// ”We have never met but,</span><br />
+				<span class="comments">// can we have a coffee or something?“</span><br />
+				<span class="keyword">boolean</span> isPossible = <span class="keyword">true</span>;<br />
+				<span class="keyword">if</span> (isPossible) {<br />
+				<span class="placeholder"/>drink(u, i);<br />
+				<!--span class="placeholder"/><span class="comments">// I think it is an important decision</span><br /-->
+				<span class="placeholder"/>i.talkTo(u, "Your smile is beautifull.");<br />
+				}<br />
+				<span class="comments">// I can still remember your smile and the music played in that cafe to this day.</span><br />
+				i.remember(u.getSmile());<br />
+				cafe.playMusic("https://music.163.com/song?id=407450660&userid=53315937");<br />				
 			</div>
 			<div id="loveHeart">
 				<canvas id="garden"></canvas>
 				<div id="words">
 					<div id="messages">
-						Minyue, I have fallen in love with you for
+						Hi girl, I have fallen in love with you for
 						<div id="elapseClock"></div>
 					</div>
 					<div id="loveu">
-						Love u forever and ever.<br/>
-						<div class="signature">- hackerzhou</div>
+						<!--Love u forever and ever.<br/-->
+						<div class="signature">- yucfeng</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="copyright">
 			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
-			Copyright © 2011 <a href='http://hackerzhou.me'>hackerzhou.me</a> 2009-2011
+			Copyright © 2018 <a href='#'>hackerzhou</a> 2009-2018
 		</div>
 	</div>
 	<script type="text/javascript">
 		var offsetX = $("#loveHeart").width() / 2;
 		var offsetY = $("#loveHeart").height() / 2 - 55;
 		var together = new Date();
-		together.setFullYear(2010, 10, 2);
+		together.setFullYear(2018, 6, 18);
 		together.setHours(20);
 		together.setMinutes(0);
 		together.setSeconds(0);
